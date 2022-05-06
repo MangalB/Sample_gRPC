@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package customers.isregistered;
+
+message request {
+    string mobile = 1;
+}
+
+message response {
+    bool isregistered = 1;
+}

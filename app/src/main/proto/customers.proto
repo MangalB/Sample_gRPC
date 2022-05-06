@@ -1,0 +1,15 @@
+syntax = "proto3";
+/*
+ Keep package name sane for categorizations
+*/
+package services;
+
+import "customers/isregistered.proto";
+
+// The greeting service definition.
+service customers {
+
+    rpc isregistered (.customers.isregistered.request) returns (.customers.isregistered.response) {
+    }
+
+}
